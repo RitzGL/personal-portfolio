@@ -11,14 +11,14 @@ header{
     justify-content:space-between;
     align-items: center;
     background-color: rgb(86, 130, 138);
-    position:fixed;
     width: 100%;
     margin:0px;
 }
 
 header h1{
-    display: inline-block;
+    display: inline;
     background-color: white;
+    border-radius: 15px;
     padding: 10px;
     margin: 10px;
     color: rgb(37, 176, 201);
@@ -35,7 +35,7 @@ header ul li{
     font-weight:bold;
     list-style: none;
 
-    float:right;
+    float:inline-end;
 
     /*display type*/
     display: inline;
@@ -58,10 +58,15 @@ header ul li{
     background-image: url("../assets/banner-image.jpg");
 }
 
+
 .profile-picture{
-    width: 300px;
-    height: 600px;
-    align-self: left;
+    width: 204px;
+    height: 273px;
+    background-image: url("../assets/profile-img.png");
+    align-self: center;
+    position:relative;
+    bottom: -21px;
+    margin-left: 21%;
 }
 
 /* from here up, do not fkn touch anything, it's fine */
@@ -71,7 +76,7 @@ header ul li{
 /* 1 box class per boxes - 6 total */
 main{
     display:grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: 20% 80%;
     
     
 }
@@ -114,6 +119,7 @@ main{
     padding-bottom: 0.5em;
     align-items: center;
 }
+
 
 
 /* i need a secondary nested grid where project images will go */
