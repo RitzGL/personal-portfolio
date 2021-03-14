@@ -4,19 +4,96 @@
 }
 
 header{
-    display: flex;
+    background-color: rgb(86, 130, 138);
+    position:fixed;
+    width: 100%;
+    margin:0px;
+    
 }
 
-header ul li{
+header h1{
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(37, 176, 201);
+}
 
+header div{
+    display: inline-block;
+}
+
+/*header nav links specs*/
+header ul li{
     /*text aesthetics*/
     text-decoration: underline;
     font-weight:bold;
     list-style: none;
 
     /*display type*/
-    display: inline-flex;
+    display: inline;
 
     /*dimensions*/
-    padding: 10px;
+    padding: 15px;
+    margin: 10px;
+
+    /*coloring*/
+    border-radius: 15px;
+    background-color: rgb(37, 176, 201);
+    
+}
+
+/*banner image*/
+.image{
+    padding-top: 75px;
+    width:100%;
+    height:400px;
+    background-image: url("../assets/banner-image.jpg");
+}
+
+
+/*about me section, small description of self*/
+#about-me{
+    display: flex;
+    align-content: center;
+    justify-self: center;    
+}
+#about-me h2, p{
+    
+    margin:20px;
+    padding:20px;
+}
+
+/*Work section with the projects*/
+#work{
+    display: flex;
+    align-content: center;
+    justify-self: center;  
+}
+#work h2, p{
+    
+    margin:20px;
+    padding:20px;
+}
+
+/*contact with links to other relevant pages*/
+#contact{
+    display: flex;
+    align-content: center;
+    justify-self: center;  
+}
+#contact h2, p{
+    
+    margin:20px;
+    padding:20px;
+}
+
+#contact ul{
+    position:relative;
+    top: 30px;
+}
+
+#contact ul li{
+    padding:5px;
+    display:inline;
 }
