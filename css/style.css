@@ -53,41 +53,26 @@ header ul li{
     background-image: url("../assets/banner-image.jpg");
 }
 
-.main{
-    display: flex;
-    align-content: center;
-    margin:20px;
-    padding:20px;
-    align-items: center;
-    justify-content:center;
+/* from here up, do not fkn touch anything, it's fine */
+/* ===================================================================== */
+
+/* I need a grid on my main page where the content will go */
+/* 1 box class per boxes - 6 total */
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* I need a class styling the h2's + border on right side */
+.heading-box{
+    justify-self: right;
+    border-right: solid 0.2em;
+    border-color: rgb(12, 231, 166);
+    margin:0.3em;
 }
 
-/*about me section, small description of self*/
-#about-me h2, p{
-    display:inline-flex;
-    margin:20px;
-    padding:20px;
+.heading-box h2{
+    color:rgb(0, 91, 209);
+    margin:0.5em;
 }
-
-/*Work section with the projects*/
-#work h2, p{
-    display:inline-flex;
-    margin:20px;
-    padding:20px;
-}
-
-/*contact with links to other relevant pages*/
-#contact h2, p{
-    display:inline-flex;
-    margin:20px;
-    padding:20px;
-}
-
-#contact ul{
-    top: 30px;
-}
-
-#contact ul li{
-    display:inline-flex;
-    padding:5px;
-}
+/* i need a secondary nested grid where project images will go */
+/* secondary grid can just be one generic class */
