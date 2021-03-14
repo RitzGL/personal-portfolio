@@ -5,8 +5,8 @@
     margin: 0%;
 }
 
+/* links in the naviation bar */
 header{
-    /* placing the links on the right side */
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -15,6 +15,7 @@ header{
     margin:0px;
 }
 
+/* page title, left hand top corner */
 header h1{
     display: inline;
     background-color: white;
@@ -24,30 +25,26 @@ header h1{
     color: rgb(37, 176, 201);
 }
 
+/* list container */
 header div{
     display: block;
 }
 
 /*header nav links specs*/
 header ul li{
-    /*text aesthetics*/
     text-decoration: underline;
     font-weight:bold;
     list-style: none;
-
+    
     float:inline-end;
 
-    /*display type*/
     display: inline;
-
-    /*dimensions*/
+    
     padding: 15px;
     margin: 10px;
 
-    /*coloring*/
     border-radius: 15px;
-    background-color: rgb(37, 176, 201);
-    
+    background-color: rgb(37, 176, 201);    
 }
 
 /*banner image*/
@@ -58,7 +55,7 @@ header ul li{
     background-image: url("../assets/banner-image.jpg");
 }
 
-
+/* picture of my face */
 .profile-picture{
     width: 204px;
     height: 273px;
@@ -69,32 +66,27 @@ header ul li{
     margin-left: 21%;
 }
 
-/* from here up, do not fkn touch anything, it's fine */
-/* ===================================================================== */
-
-/* I need a grid on my main page where the content will go */
-/* 1 box class per boxes - 6 total */
+/*======================================================================*/
+/* grid maintaining structure of page */
 main{
     display:grid;
     grid-template-columns: 20% 80%;
-    
-    
-}
-/* I need a class styling the h2's + border on right side */
-.heading-box{
-    
-    justify-self: right;
-    
 }
 
+/* box containing the section headers */
+.heading-box{    
+    justify-self: right;
+}
+
+/* headers for about me, work and contact */
 .heading-box h2{
     align-content: right;
     color:rgb(0, 91, 209);
     margin:0.5em;
 }
 
+/* area containing paragraps about me, and links */
 .card-box{
-    
     border-left: solid 0.25em;
     border-color: rgb(12, 231, 166);
     margin:0.3em;
@@ -120,7 +112,7 @@ main{
     align-items: center;
 }
 
+/* secondary grid, filled with work stuff*/
+#nested-id{
 
-
-/* i need a secondary nested grid where project images will go */
-/* secondary grid can just be one generic class */
+}
