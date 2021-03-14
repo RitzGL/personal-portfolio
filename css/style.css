@@ -1,5 +1,24 @@
 /*This is my CSS file*/
-h1, h2, p{
+*{
     font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
+header h1{
+    /*display type*/
+    display: inline;
+
+}
+
+header ul li{
+
+    /*text aesthetics*/
+    text-decoration: underline;
+    font-weight:bold;
+    list-style: none;
+
+    /*display type*/
+    display: inline;
+
+    /*dimensions*/
+    padding: 10px;
+}
