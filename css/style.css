@@ -65,14 +65,23 @@ main{
 /* I need a class styling the h2's + border on right side */
 .heading-box{
     justify-self: right;
-    border-right: solid 0.2em;
-    border-color: rgb(12, 231, 166);
-    margin:0.3em;
 }
 
 .heading-box h2{
     color:rgb(0, 91, 209);
     margin:0.5em;
+}
+
+.card-box{
+    border-left: solid 0.25em;
+    border-color: rgb(12, 231, 166);
+    margin:0.3em;
+}
+
+.card-box article p{
+    margin: 0.3em;
+    padding: 0.5em;
+    justify-items: center;
 }
 /* i need a secondary nested grid where project images will go */
 /* secondary grid can just be one generic class */
