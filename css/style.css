@@ -6,11 +6,14 @@
 }
 
 header{
+    /* placing the links on the right side */
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
     background-color: rgb(86, 130, 138);
     position:fixed;
     width: 100%;
     margin:0px;
-    
 }
 
 header h1{
@@ -22,7 +25,7 @@ header h1{
 }
 
 header div{
-    display: inline-block;
+    display: block;
 }
 
 /*header nav links specs*/
@@ -31,6 +34,8 @@ header ul li{
     text-decoration: underline;
     font-weight:bold;
     list-style: none;
+
+    float:right;
 
     /*display type*/
     display: inline;
@@ -53,6 +58,12 @@ header ul li{
     background-image: url("../assets/banner-image.jpg");
 }
 
+.profile-picture{
+    width: 300px;
+    height: 600px;
+    align-self: left;
+}
+
 /* from here up, do not fkn touch anything, it's fine */
 /* ===================================================================== */
 
@@ -60,19 +71,25 @@ header ul li{
 /* 1 box class per boxes - 6 total */
 main{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 2fr);
+    
+    
 }
 /* I need a class styling the h2's + border on right side */
 .heading-box{
+    
     justify-self: right;
+    
 }
 
 .heading-box h2{
+    align-content: right;
     color:rgb(0, 91, 209);
     margin:0.5em;
 }
 
 .card-box{
+    
     border-left: solid 0.25em;
     border-color: rgb(12, 231, 166);
     margin:0.3em;
@@ -83,5 +100,21 @@ main{
     padding: 0.5em;
     justify-items: center;
 }
+
+/* padding is specific so to more accurately match other card's padding */
+.card-box ul li{
+    display: inline;
+    position:relative;
+    top:15px;
+    list-style: none;
+    margin: 0.3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    align-items: center;
+}
+
+
 /* i need a secondary nested grid where project images will go */
 /* secondary grid can just be one generic class */
