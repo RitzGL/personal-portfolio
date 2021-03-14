@@ -3,10 +3,8 @@
     font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
-header h1{
-    /*display type*/
-    display: inline;
-
+header{
+    display: flex;
 }
 
 header ul li{
@@ -17,7 +15,7 @@ header ul li{
     list-style: none;
 
     /*display type*/
-    display: inline;
+    display: inline-flex;
 
     /*dimensions*/
     padding: 10px;
