@@ -114,5 +114,7 @@ main{
 
 /* secondary grid, filled with work stuff*/
 #nested-id{
-
+    display:grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
 }
