@@ -11,7 +11,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    background-color: rgb(12, 231, 166);
+    background-color: rgb(57, 125, 146);
     width: 100%;
     margin:0px;
 }
@@ -23,7 +23,7 @@ header h1{
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
-    color: rgb(12, 231, 166);
+    color: rgb(57, 125, 146);
 }
 
 /* list container */
@@ -80,6 +80,7 @@ header ul li{
 /*======================================================================*/
 /* grid maintaining structure of page */
 main{
+    margin-top: 3em;
     display:grid;
     grid-template-columns: 20% 70%;
     grid-row-gap: 3em;
@@ -93,7 +94,7 @@ main{
 /* headers for about me, work and contact */
 .heading-box h2{
     align-content: right;
-    color:rgb(0, 91, 209);
+    color:rgb(57, 125, 146);
     margin:0.5em;
 }
 
