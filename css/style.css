@@ -152,3 +152,19 @@ footer{
 
 /* ============================================================ */
 /* MEDIA QUERIES */
+
+@media (max-width: 1712px){
+    .card-box ul li{
+        padding-left: 4em;
+        padding-right: 4em;
+        /* font-size:small; */
+    }
+}
+
+@media (max-width: 1286px){
+    .card-box ul li{
+        padding-left: 4em;
+        padding-right: 4em;
+        /* font-size:small; */
+    }
+}
