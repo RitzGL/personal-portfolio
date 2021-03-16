@@ -55,11 +55,7 @@ header ul li{
     background-image: url("../assets/banner-image.jpg");
 }
 
-/* .image h3{
-    position:relative;
-    float:right;
-} */
-
+/* text next to the profile image */
 .image-text{
     position:relative;
     float:right;
@@ -78,6 +74,8 @@ header ul li{
     position:relative;
     bottom: -21px;
     margin-left: 21%;
+    border-radius: 15px;
+    border: solid rgb(12, 231, 166) 5px;
 }
 
 /*======================================================================*/
