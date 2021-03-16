@@ -12,7 +12,7 @@ header{
     align-items: center;
     background-color: rgb(57, 125, 146);
     width: 100%;
-    margin:0px;
+    margin: 0px;
 }
 
 /* page title, left hand top corner */
@@ -34,29 +34,25 @@ header div{
 header ul li{
     font-weight:bold;
     list-style: none;
-    
-    float:inline-end;
-
+    float: inline-end;
     display: inline;
-    
     padding: 15px;
     margin: 10px;
-
     border-radius: 15px;    
 }
 
 /*banner image*/
 .image{
     padding-top: 75px;
-    width:100%;
-    height:400px;
+    width: 100%;
+    height: 400px;
     background-image: url("../assets/banner-image.jpg");
 }
 
 /* text next to the profile image */
 .image-text{
-    position:relative;
-    float:right;
+    position: relative;
+    float: right;
     font-size: xx-large;
     max-width: fit-content;
     padding-right: 49%;
@@ -69,7 +65,7 @@ header ul li{
     height: 273px;
     background-image: url("../assets/profile-img.png");
     align-self: center;
-    position:relative;
+    position: relative;
     bottom: -21px;
     margin-left: 21%;
     border-radius: 15px;
@@ -110,7 +106,6 @@ main{
     margin: 1em;
     padding-left: 0em;
     padding-right: 8em;
-    justify-items: center;
 }
 
 /* padding is specific so to more accurately match other card's padding */
@@ -132,20 +127,39 @@ main{
 }
 
 /* secondary grid, filled with work stuff*/
-#nested-id{
+#nested-grid{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* elements within anchor */
+.project{
+    justify-content: center;
+    position:relative;
+    transition: padding 0.5s;
+}
+
+/* text within images */
+.project h3{
+    background-color: white;
+    outline:10px solid white;
+    position:absolute;
+    justify-self: center;
+    left:32%;
+    bottom:40%;
+    opacity: 0; 
+    transition: 0.5s;
+}
+
+/* individual images in the nested grid */
 .project img{
     border: solid 5px rgb(57, 125, 146);
     width: 350px;
     height: 200px;
     margin:1em;
-    transition: margin 0.5s;
 }
 
-
+/* bottom of the page */
 footer{
     display:flex;
     justify-content: center;
@@ -162,13 +176,6 @@ footer{
     }
 }
 
-@media (max-width: 1286px){
-    .card-box ul li{
-        padding-left: 4em;
-        padding-right: 4em;
-    }
-}
-
 /* modifying text under profile picture */
 @media (max-width: 1701px){
     .image-text{
@@ -181,7 +188,7 @@ footer{
 }
 
 /* modifying contact me + text under profile picture */
-@media (max-width: 1045px){
+@media (max-width: 1065px){
     .card-box ul li{
         padding-left: 2em;
         padding-right: 2em;
@@ -195,13 +202,40 @@ footer{
         padding-right: 43%;
         padding-top: 20px;
     }
+
+    #nested-grid{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
+@media (max-width: 750px){
+    .card-box ul li{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .image-text{
+        position:relative;
+        float:right;
+        font-size: x-large;
+        max-width: fit-content;
+        padding-right: 43%;
+        padding-top: 20px;
+    }
+
+    #nested-grid{
+        grid-template-columns: 1fr;
+    }
+}
 /* =========================================================== */
 /* pseudo classes for animations */
-.project:hover img{
-    margin-right: 5%;
-    margin-left: 5%;
+.project:hover {
+    padding-left: 3%;
+    padding-right:3%;
+}
+
+.project:hover h3{
+    opacity:1;
 }
 
 .card-box:hover ul li{
