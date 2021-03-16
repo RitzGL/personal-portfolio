@@ -80,7 +80,7 @@ header ul li{
 /*======================================================================*/
 /* grid maintaining structure of page */
 main{
-    margin-top: 3em;
+    margin-top: 3.28em;
     display:grid;
     grid-template-columns: 20% 70%;
     grid-row-gap: 3em;
