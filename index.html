@@ -5,30 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
 </head>
 <body>
     <header>
-        <h1>RitzGL</h1>
-        <div>
-            <ul>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <dir class="navbar-item">
+                        <h1 class="has-text-weight-bold is-size-3">RitzGL</h1>    
+                    </dir>
+                </div>
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        About
+                    </a>
+                    <a class="navbar-item">
+                        Projects
+                    </a>
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+              </div>
+            </div>
+          </nav>
     </header>
-    <!--background image -->
-    <div class="image">
-        <!-- profile picture inside image -->
-        <img class="profile-picture">
-        <!-- text next to pofile image -->
-        <div class="image-text">
-            <h3>RitzGL</h3>
-            <h3>Aspiring developer.</h3>
-        </div>
-    </div>
+
+    <!-- insert hero section here -->
+
     <main>
         <!-- borders may need to go into card-box -->
         <section class="heading-box" id="about-me">
@@ -78,38 +84,13 @@
             <h2>Work</h2>
         </section>
         
-        <section class="card-box" id="nested-grid">
-            <!-- nested grid cotaining projects -->
-            <a class="project" href="https://github.com/RitzGL/marketing-website">
-                <img src="./assets/code-refactor-project.png" alt="website screenshot">
-                <h3>Code Refactor</h3>
-            </a>
-
-            <a class="project" href="https://scratch.mit.edu/projects/490469776/">
-                <img src="./assets/scratch-game-project.png" alt="scratch site screenshot">
-                <h3>Scratch Game Project</h3>  
-            </a>
-
-            <a class="project" href="https://github.com/RitzGL/">
-                <img src="./assets/project-3.png" alt="wallpaper">
-                <h3>Coming Soon</h3>
-            </a>
-
-            <a class="project" href="https://github.com/RitzGL/">
-                <img src="./assets/project-4.png" alt="wallpaper">
-                <h3>Coming Soon</h3>  
-            </a>
-
-            <a class="project" href="https://github.com/RitzGL/">
-                <img src="./assets/project-5.png" alt="wallpaper">
-                <h3>Coming Soon</h3>  
-            </a>
-
-            <a class="project" href="https://github.com/RitzGL/">
-               <img src="./assets/project-6.png" alt="wallpaper">
-               <h3>Coming Soon</h3>  
-            </a>
-        </section>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img class="materialboxed" src="assets/code-refactor-project.png"></a>
+            <a class="carousel-item" href="#two!"><img class="materialboxed" src="assets/scratch-game-project.png"></a>
+            <a class="carousel-item" href="#three!"><img class="materialboxed" src="assets/project-3.png"></a>
+            <a class="carousel-item" href="#four!"><img class="materialboxed" src="assets/project-4.png"></a>
+            <a class="carousel-item" href="#five!"><img class="materialboxed" src="assets/project-5.png"></a>
+        </div>
         
         <section class="heading-box" id="contact">
             <h2>Contact Me</h2>
@@ -130,5 +111,6 @@
     <footer>
         <p>⚡ Powered by GitHub pages ⚡</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
