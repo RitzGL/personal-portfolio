@@ -8,24 +8,25 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <nav class="navbar has-background-primary-dark" role="navigation" aria-label="main navigation">
             <div class="navbar-menu">
                 <div class="navbar-start">
                     <dir class="navbar-item">
-                        <h1 class="has-text-weight-bold is-size-3">RitzGL</h1>    
+                        <h1 class="has-text-weight-bold is-size-3 has-text-white">RitzGL</h1>    
                     </dir>
                 </div>
-                <div class="navbar-end">
-                    <a class="navbar-item">
+                <div class="navbar-end is-size-4">
+                    <a class="navbar-item has-text-white">
                         About
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item has-text-white" href="#work">
                         Projects
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item has-text-white" href="#contact">
                         Contact
                     </a>
               </div>
@@ -34,66 +35,79 @@
     </header>
 
     <!-- insert hero section here -->
+    <section class="hero">
+        <img src="./assets/banner-image.jpg" alt="colourful wallpaper">
+        
+    </section>
 
-    <main>
-        <!-- borders may need to go into card-box -->
-        <section class="heading-box" id="about-me">
-            <h2>About Me</h2>
-        </section>
-        <!-- information about me -->
-        <section class="card-box">
-            <!-- info about me -->
-            <article>
-                <p>
-                    My name is Maurizio (Ritz), and this page was designed
-                    and launched by me. Here's some info on me.
-                    <br> 
-                    <br>
-                    I obtained a bachelor's degree
-                    in Cognitive Neuroscience and Health Psychology at Murdoch
-                    University in 2019. I am currently enrolled in a bachelor's for 
-                    Computer Science, expecting to complete it by 2023. My goal
-                    is to transition into a role within the technology industry, 
-                    preferably as a full-time developer.
-                    <br>
-                    <br>
-                    As part of my passion for technology, I enrolled in Full Stack 
-                    Web Development Bootcamp, where I am learning HTML, CSS, JavaScript,
-                    and soon will be learning more back-end development. Having previous
-                    experience with basic C and Java, I am familiar with the fundamentals
-                    of creative problem-solving, algorithm design, and programming.
-                    <br>
-                    <br>
-                    One of my first full front-end projects is this page you are 
-                    looking at right now. In this page, I have implemented several
-                    different techniques to manipulate the layout of all these 
-                    elements. It has been challenging and time-consuming, however,
-                    this task has allowed me to improve my designing abilities. I have
-                    used media queries, pseudo-classes, general classes and semantic 
-                    selectors to lay out the elements on this page. 
-                    <br>
-                    <br>
-                    In my spare time, I like to tinker with computer parts, learn about hardware, and the 
-                    newest advancements in technology. I also have an interest in 
-                    game design, game development and simulated physics engines. 
-                </p>
-            </article>
-        </section>
-        
-        <section class="heading-box" id="work">
-            <h2>Work</h2>
-        </section>
-        
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img class="materialboxed" src="assets/code-refactor-project.png"></a>
-            <a class="carousel-item" href="#two!"><img class="materialboxed" src="assets/scratch-game-project.png"></a>
-            <a class="carousel-item" href="#three!"><img class="materialboxed" src="assets/project-3.png"></a>
-            <a class="carousel-item" href="#four!"><img class="materialboxed" src="assets/project-4.png"></a>
-            <a class="carousel-item" href="#five!"><img class="materialboxed" src="assets/project-5.png"></a>
+    <body>
+        <div class="box columns">
+            <!-- professional headshot will go inside this section -->
+            <div class="column is-1">
+                <!-- empty div for spacing -->
+            </div>
+
+            <div class="column is-2 is-align-self-center">
+                <img class="img" src="./assets/profile-img.png" alt="headshot of young man">
+            </div>
+
+            <!-- information about me is in here -->
+            <div class="content column is-8">
+                <!-- body of text -->
+                <section>
+                    <article>
+                        <h2 class="has-text-weight-bold is-size-4">About Me</h2>
+                        <p>
+                            My name is Maurizio (Ritz), and this page was designed
+                            and launched by me. Here's some info on me.
+                            <br><br>
+                            I obtained a bachelor's degree
+                            in Cognitive Neuroscience and Health Psychology at Murdoch
+                            University in 2019. I am currently enrolled in a bachelor's for 
+                            Computer Science, expecting to complete it by 2023. My goal
+                            is to transition into a role within the technology industry, 
+                            preferably as a full-time developer.
+                            <br><br>
+                            As part of my passion for technology, I enrolled in Full Stack 
+                            Web Development Bootcamp, where I am learning HTML, CSS, JavaScript,
+                            and soon will be learning more back-end development. Having previous
+                            experience with basic C and Java, I am familiar with the fundamentals
+                            of creative problem-solving, algorithm design, and programming.
+                            <br><br>
+                            One of my first full front-end projects is this page you are 
+                            looking at right now. In this page, I have implemented several
+                            different techniques to manipulate the layout of all these 
+                            elements. This is an updated version of my portfolio, implementing
+                            the Bulma framework, previous iteration of this page featured HTML and CSS 
+                            authored entirely by me. 
+                            <br><br>
+                            In my spare time, I like to tinker with computer parts, learn about hardware, and the 
+                            newest advancements in technology. I also have an interest in 
+                            data science, machine learning, AI and cybersecurity. 
+                        </p>
+                    </article>
+                </section>
+            </div>
         </div>
         
+
+        <!-- section with the projects -->
+        <div class="box columns">
+            <div class="column is-3">
+                <!-- empty div for spacing -->
+            </div>
+
+            <section class="column is-8 pl-3" id="work">
+                <h2 class="has-text-weight-bold is-size-4">Work</h2>
+            </section>
+        </div>
+        
+        
+        <!-- project images go here, within a table, possibly -->
+        <!-- might need to wrap in a mother div so I can "block" them -->
+        
         <section class="heading-box" id="contact">
-            <h2>Contact Me</h2>
+            <h2 class="has-text-weight-bold">Contact Me</h2>
         </section>
 
         <section class="card-box">
@@ -105,7 +119,7 @@
             </ul>
         </section>
 
-    </main>
+    </body>
     <br><br>
     <br><br>
     <footer>
