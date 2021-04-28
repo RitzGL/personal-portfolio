@@ -3,3 +3,7 @@
     width:auto !important;
     border-radius: 25px !important;
 }
+
+.link{
+    display: inline !important;
+}
